@@ -23,9 +23,8 @@
         1,
         1,
         1,
-        null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -40,6 +39,10 @@
         1,
         2,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/spec/bank_account_spec.rb": [
@@ -52,6 +55,6 @@
 
       ]
     },
-    "timestamp": 1524672640
+    "timestamp": 1524672888
   }
 }

@@ -19,8 +19,7 @@ describe Balance do
   describe '.debit' do
     it 'takes away money from the holdings property' do
       subject.credit(300.00)
-
-      subject.withdraw(100.00)
+      subject.debit(100.00)
       expect(subject.holdings).to eq 200.00
     end
   end
