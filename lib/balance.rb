@@ -3,4 +3,8 @@ class Balance
   def initialize
     @holdings = 0
   end
+
+  def credit(amount)
+    @holdings += amount
+  end
 end
