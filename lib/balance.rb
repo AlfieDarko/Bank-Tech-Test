@@ -10,7 +10,7 @@ class Balance
 
   def debit(amount)
     if amount > @holdings
-      raise StandardError
+      insufficient_funds
     else
       @holdings -= amount
     end
@@ -21,7 +21,5 @@ class Balance
   def insufficient_funds
     puts 'Insufficient funds, you will not be able to make a withdrawal.'
     raise StandardError
-  rescue StandardError
-    puts 'Please make a deposit'
   end
 end
