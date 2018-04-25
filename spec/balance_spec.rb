@@ -6,5 +6,9 @@ describe Balance do
   end
 
   describe '.credit' do
+    it 'adds money to the holdings property' do
+      subject.credit(100.00)
+      expect(subject.holdings).to eq 100.00
+    end
   end
 end
