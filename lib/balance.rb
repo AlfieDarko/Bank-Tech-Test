@@ -7,4 +7,8 @@ class Balance
   def credit(amount)
     @holdings += amount
   end
+
+  def debit(amount)
+    @holdings -= amount
+  end
 end
