@@ -2,7 +2,6 @@
 
 require 'simplecov'
 require 'simplecov-console'
-require '../lib/'
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
                                                                  SimpleCov::Formatter::Console
                                                                ])

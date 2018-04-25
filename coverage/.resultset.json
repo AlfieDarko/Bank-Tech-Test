@@ -1,7 +1,26 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/spec/balance_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/spec/bank_account_spec.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/spec/transactions_spec.rb": [
+
+      ]
     },
-    "timestamp": 1524572264
+    "timestamp": 1524669441
   }
 }
