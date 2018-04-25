@@ -3,10 +3,20 @@
     "coverage": {
       "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/spec/balance_spec.rb": [
         1,
+        null,
+        1,
         1,
         1,
         null,
         null,
+        1,
+        null,
+        null
+      ],
+      "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/lib/balance.rb": [
+        1,
+        1,
+        1,
         1,
         null,
         null
@@ -21,6 +31,6 @@
 
       ]
     },
-    "timestamp": 1524669441
+    "timestamp": 1524671059
   }
 }

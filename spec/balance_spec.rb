@@ -1,4 +1,6 @@
-describe 'Balance' do
+require 'balance.rb'
+
+describe Balance do
   it 'has a holdings of zero' do
     expect(subject.holdings).to eq 0
   end
