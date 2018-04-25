@@ -24,7 +24,7 @@ describe Balance do
     end
 
     it 'should raise error if user withdraws more than in holdings' do
-      expect(subject.debit(100.00)).to raise_error(StandardError)
+      expect { subject.debit(100.00) }.to raise_error 'StandardError'
     end
   end
 end
