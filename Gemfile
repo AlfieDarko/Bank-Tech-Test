@@ -10,4 +10,5 @@ group :test do
   gem 'rspec'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
+  gem 'rspec_junit_formatter'
 end
