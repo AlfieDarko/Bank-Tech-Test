@@ -14,11 +14,17 @@ end
 
 
 def output_history
-   @history.map do |date,credit, debit,balance|
+  @history.map do |date,credit, debit,balance|
     "#{date} || #{credit} || #{debit} || #{balance}"
  end
 end
 
+def print_statement
+  puts 'date || credit || debit || balance'
+  output_history.map do |transaction|
+    puts "#{transaction}"
+  end
+end
 
 private
 def date

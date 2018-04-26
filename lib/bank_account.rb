@@ -18,5 +18,12 @@ class BankAccount
     @balance.debit(amount)
   end
 
+  def print_statement
+    puts 'date || credit || debit || balance'
+    @balance.transactions.output_history.map do |transaction|
+      puts "#{transaction}"
+    end
+  end
+
 
 end
