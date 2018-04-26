@@ -4,14 +4,18 @@ class Transactions
     @history = []
   end
 
-def add_record(amount, holdings)
-  history.push([date,amount,holdings])
+def add_credit_record(amount, holdings)
+  history.push([date,amount,nil,holdings])
 end
 
+def add_debit_record(amount, holdings)
+  history.push([date,nil, amount,holdings])
+end
+
+
 def output_history
-  # puts "date || credit || debit || balance"
-   @history.map do |date,amount,balance|
-    "#{date} #{amount} #{balance}"
+   @history.map do |date,credit, debit,balance|
+    "#{date} #{credit} #{debit}  #{balance}"
  end
 end
 

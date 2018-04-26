@@ -9,7 +9,7 @@ class Balance
 
   def credit(amount)
     @holdings += amount
-    @transactions.add_record(amount, @holdings)
+    @transactions.add_credit_record(amount, @holdings)
   end
 
   def debit(amount)
@@ -17,7 +17,7 @@ class Balance
       insufficient_funds
     else
       @holdings -= amount
-      @transactions.add_record(amount, @holdings)
+      @transactions.add_debit_record(amount, @holdings)
     end
   end
 
