@@ -23,7 +23,6 @@ describe BankAccount do
       subject.deposit(100)
       subject.withdraw(50)
       expect(subject.show_balance).to eq 50
-
     end
   end
 end

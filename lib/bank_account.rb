@@ -14,5 +14,9 @@ class BankAccount
     @balance.credit(amount)
   end
 
+  def withdraw(x)
+    @balance.debit(x)
+  end
+
 
 end
