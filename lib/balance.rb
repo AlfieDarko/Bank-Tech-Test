@@ -1,6 +1,7 @@
 class Balance
-  attr_accessor :holdings
-  def initialize
+  attr_accessor :holdings, :transactions
+  def initialize (transactions = Transactions.new)
+    @transactions = transactions
     @holdings = 0
   end
 
