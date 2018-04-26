@@ -1,5 +1,6 @@
 # Bank-Tech-Test
 Makers Academy Week #10 - Bank Tech Test Challenge
+[![Maintainability](https://api.codeclimate.com/v1/badges/82661539fce10cbc2900/maintainability)](https://codeclimate.com/github/AlfieDarko/Bank-Tech-Test/maintainability)
 
 ## Project Overview
 I have set out to create a Bank application as according to the tech test specification. You can withdraw and deposit money to your account and view a list of previous transactions. The application can be executed via command line.

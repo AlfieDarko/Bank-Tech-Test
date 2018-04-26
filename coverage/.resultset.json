@@ -36,6 +36,7 @@
       "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/lib/balance.rb": [
         1,
         null,
+        null,
         1,
         1,
         1,
@@ -67,6 +68,7 @@
       ],
       "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/lib/transactions.rb": [
         1,
+        null,
         null,
         1,
         1,
@@ -231,6 +233,6 @@
         null
       ]
     },
-    "timestamp": 1524754377
+    "timestamp": 1524756576
   }
 }

@@ -31,6 +31,6 @@ class Transactions
   private
 
   def date
-    Date.now.strftime('%m/%d/%Y')
+    DateTime.now.strftime('%m/%d/%Y')
   end
 end
