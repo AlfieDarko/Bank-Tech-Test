@@ -107,6 +107,10 @@
         1,
         2,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/alfiedarko/Documents/Makers/Bank-Tech-Test/spec/transactions_spec.rb": [
@@ -138,6 +142,6 @@
         null
       ]
     },
-    "timestamp": 1524740101
+    "timestamp": 1524740227
   }
 }
