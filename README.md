@@ -29,7 +29,8 @@ Ruby
 
 
 ## Installation
-
+### Prerequisites
+Ruby (https://www.ruby-lang.org/en/documentation/installation/)
 
 
 ## Usage
