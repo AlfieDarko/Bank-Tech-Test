@@ -10,5 +10,9 @@ class BankAccount
     @balance.holdings
   end
 
-  
+  def deposit(amount)
+    @balance.credit(amount)
+  end
+
+
 end
