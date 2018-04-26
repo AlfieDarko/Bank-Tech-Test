@@ -8,6 +8,13 @@ def add_record(amount, holdings)
   history.push([date,amount,holdings])
 end
 
+def output_history
+  # puts "date || credit || debit || balance"
+   @history.map do |date,amount,balance|
+    "#{date} #{amount} #{balance}"
+ end
+end
+
 
 private
 def date

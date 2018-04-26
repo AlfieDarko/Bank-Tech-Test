@@ -50,7 +50,7 @@ describe Transactions do
         balance.credit(100)
         balance.credit(200)
 
-        expect(subject.output_history).to include(100, 200)
+        expect(subject.output_history).to eq(["04/26/2018 100 100", "04/26/2018 200 200"])
     end
   end
 end
