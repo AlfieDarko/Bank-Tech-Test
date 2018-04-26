@@ -32,12 +32,8 @@ describe Transactions do
         allow(balance).to receive(:credit) do |args|
           allow(balance).to receive(:holdings) {args}
           subject.add_record(args, balance.holdings)
-
         end
-
-
         balance.credit(100)
-
       expect(subject.history).to eq [["04/26/2018", 100, 100]]
     end
   end

@@ -9,7 +9,7 @@ class Balance
 
   def credit(amount)
     @holdings += amount
-    @transactions.history.push([DateTime.now.strftime('%m/%d/%Y'),"+#{amount}","" , @holdings])
+    @transactions.add_record(x, @holdings)
   end
 
   def debit(amount)
@@ -17,7 +17,7 @@ class Balance
       insufficient_funds
     else
       @holdings -= amount
-      @transactions.history.push([DateTime.now.strftime('%m/%d/%Y'),"-#{amount}","" , @holdings])
+      @transactions.add_record(x, @holdings)
     end
   end
 
