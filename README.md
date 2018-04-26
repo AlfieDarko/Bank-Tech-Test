@@ -30,6 +30,10 @@ Ruby
 ### Prerequisites
 Install Ruby => (https://www.ruby-lang.org/en/documentation/installation/)
 
+Download Project Folder and then navigate to its folder using a terminal/cmd.
+
+run ```bundle install``` to install any gems and dependancies.
+
 Then run the command 'irb' from the commandline.
 
 Alternatively use this online ruby environment I have prepared earlier.
@@ -96,6 +100,19 @@ and scenarios tested will be displayed in the terminal.
 To run each class tests individually follow 'rspec' with any of the files in the spec file folder so for eg.
 
 'rspec spec/balance_spec.rb' will only run the specs that test units in the balance class.
+
+## Thoughts
+This was an interesting project to do as I had to think a lot about encapsulation
+ and DRY principles. I actively tried to keep methods very short and moved all
+logic to their respective classes and called them from where they were needed.
+
+I made small psuedo-code plans before hand but I found that the more I developed
+it using TDD, the more areas I recognised could be refactored.
+
+I considered making the DateTime format method its own class but I opted to make
+it a private helper method under the transaction class instead. I felt there
+where arguments for and against making it its own class but ultimately, it was a small
+method and I didn't feel it needed its own class
 
 ## Authors
 Alfie Darko
