@@ -10,15 +10,16 @@ describe Transactions do
     expect(subject.history).to eq []
   end
 
-  # it 'adds transactions to the history property' do
-  # balance = double('balance')
+  it 'adds transactions to the history property' do
+  balance = double('balance')
 
-  #   allow(balance).to receive(:holdings)
-  #   allow(balance).to receive(:credit) do |args|
-  #     allow(balance).to receive(:holdings) {args}
-  #   end
-  #
-  #   balance.credit(100)
-  #   puts balance.holdings
-  # end
+    allow(balance).to receive(:holdings)
+    allow(balance).to receive(:credit) do |args|
+      allow(balance).to receive(:holdings) {args}
+    end
+
+    balance.credit(100)
+    puts balance.holdings
+    expect(subject.transactions).to eq [100]
+  end
 end
