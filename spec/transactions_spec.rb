@@ -37,4 +37,20 @@ describe Transactions do
       expect(subject.history).to eq [["04/26/2018", 100, 100]]
     end
   end
+
+  describe 'output_history' do
+    it 'prints transaction history' do
+      balance = double('balance')
+
+        allow(balance).to receive(:holdings)
+        allow(balance).to receive(:credit) do |args|
+          allow(balance).to receive(:holdings) {args}
+          subject.add_record(args, balance.holdings)
+        end
+        balance.credit(100)
+        balance.credit(200)
+
+        expect(subject.output_history).to include(100, 200)
+    end
+  end
 end
