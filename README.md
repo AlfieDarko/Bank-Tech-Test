@@ -1,5 +1,5 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/82661539fce10cbc2900/maintainability)](https://codeclimate.com/github/AlfieDarko/Bank-Tech-Test/maintainability)
-
+[![CircleCI](https://circleci.com/gh/AlfieDarko/Bank-Tech-Test.svg?style=svg)](https://circleci.com/gh/AlfieDarko/Bank-Tech-Test) [![Maintainability](https://api.codeclimate.com/v1/svg/82661539fce10cbc2900/maintainability)](https://codeclimate.com/github/AlfieDarko/Bank-Tech-Test/maintainability)
+[![CircleCI](https://circleci.com/gh/AlfieDarko/Bank-Tech-Test.svg?style=svg)](https://circleci.com/gh/AlfieDarko/Bank-Tech-Test)
 
 # Bank-Tech-Test
 Makers Academy Week #10 - Bank Tech Test Challenge
