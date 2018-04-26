@@ -15,7 +15,7 @@ end
 
 def output_history
    @history.map do |date,credit, debit,balance|
-    "#{date} #{credit} #{debit} #{balance}"
+    "#{date} || #{credit} || #{debit} || #{balance}"
  end
 end
 
