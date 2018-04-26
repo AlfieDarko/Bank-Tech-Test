@@ -10,11 +10,12 @@ describe BankAccount do
       expect(subject.show_balance).to eq 0
     end
   end
-  # describe '.deposit' do
-  #   it 'deposits money into balance' do
-  #     subject.deposit(100)
-  #
-  #     expect(subject.).not_to eq object
-  #   end
-  # end
+
+  describe '.deposit' do
+    it 'deposits money into balance' do
+      subject.deposit(100)
+
+      expect(subject.show_balance).to eq 100
+    end
+  end
 end
