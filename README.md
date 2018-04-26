@@ -31,42 +31,54 @@ Ruby
 
 ## Installation
 ### Prerequisites
-Ruby (https://www.ruby-lang.org/en/documentation/installation/)
+Install Ruby (https://www.ruby-lang.org/en/documentation/installation/)
+Run the command 'irb' from the commandline
 
+If you are not able to install applications on your machine
 
 ## Usage
-
 in IRB or PRY (ruby environments)
 
 You can start off by doing
 
+```
+require './lib/app.rb'
+```
+
+<img src="https://preview.ibb.co/bL7JMx/Screen_Shot_2018_04_26_at_20_22_55.png" alt="Screen_Shot_2018_04_26_at_20_22_55" border="0"></a>
+
+
+then run code below
+```
 account = BankAccount.new
+```
+<img src="https://preview.ibb.co/eBenEH/Screen_Shot_2018_04_26_at_20_23_15.png" alt="Screen_Shot_2018_04_26_at_20_23_15" border="0"></a>
 
 This will instantiate the BankAccount class and will allow you to run the
 methods in the next section.
+
 ## Methods
 
-account.deposit(amount)
+**account.deposit(amount)**
 'Run this method with an integer as a parameter to deposit funds into your account'
 
-account.withdraw(amount)
+**account.withdraw(amount)**
 'Run this method with an integer as a parameter to withdraw available
  funds into your account'
 
-account.show_balance
+**account.show_balance**
 'This method will return your current account balance'
 
-account.print_statement
+**account.print_statement**
 'This method will print your statement showing the dates and amounts of Many
 credits and debits relating to this account'
 
 ## Testing
-
-Tech Used:
-RSpec
-Simplecov
-TravisCI
-CodeClimate
+**Tech Used:**
+* RSpec (Unit Tests)
+* Simplecov (Coverage)
+* CircleCI
+* CodeClimate
 
 Using the terminal, while in the project folder type and run 'rspec' to run
 the all the project tests. The class, class methods
@@ -75,7 +87,6 @@ and scenarios tested will be displayed in the terminal.
 To run each class tests individually follow 'rspec' with any of the files in the spec file folder so for eg.
 
 'rspec spec/balance_spec.rb' will only run the specs that test units in the balance class.
-## TODO
 
 ## Authors
 Alfie Darko

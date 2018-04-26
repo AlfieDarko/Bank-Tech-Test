@@ -1,4 +1,4 @@
-require 'transactions.rb'
+require './lib/transactions.rb'
 
 # This class holds all the balance operations
 class Balance

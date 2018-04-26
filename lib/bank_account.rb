@@ -1,4 +1,4 @@
-require 'balance.rb'
+require './lib/balance.rb'
 # This class holds all the bank account operations
 class BankAccount
   attr_accessor :balance
