@@ -13,9 +13,17 @@ describe BankAccount do
 
   describe '.deposit' do
     it 'deposits money into balance' do
-      subject.deposit(100)
+      subject.deposit(200)
+      expect(subject.show_balance).to eq 200
+    end
+  end
 
-      expect(subject.show_balance).to eq 100
+  describe '.withdraw' do
+    it 'withdraws money from balance' do
+      subject.deposit(100)
+      subject.withdraw(50)
+      expect(subject.show_balance).to eq 50
+
     end
   end
 end
