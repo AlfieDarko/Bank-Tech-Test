@@ -1,10 +1,6 @@
 require 'balance.rb'
 
 describe Balance do
-  before(:all) do
-    balance = Balance.new
-  end
-
   it 'has a holdings of zero' do
     expect(subject.holdings).to eq 0
   end

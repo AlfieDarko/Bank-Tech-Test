@@ -1,5 +1,5 @@
-require "balance.rb"
-
+require 'balance.rb'
+# This class holds all the bank account operations
 class BankAccount
   attr_accessor :balance
   def initialize(balance = Balance.new)
@@ -21,6 +21,4 @@ class BankAccount
   def print_statement
     @balance.transactions.print_statement
   end
-
-
 end

@@ -1,8 +1,9 @@
-require "transactions.rb"
+require 'transactions.rb'
 
+# This class holds all the balance operations
 class Balance
   attr_accessor :holdings, :transactions
-  def initialize (transactions = Transactions.new)
+  def initialize(transactions = Transactions.new)
     @transactions = transactions
     @holdings = 0
   end
