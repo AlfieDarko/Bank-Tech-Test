@@ -1,3 +1,5 @@
+require "transactions.rb"
+
 class Balance
   attr_accessor :holdings, :transactions
   def initialize (transactions = Transactions.new)
@@ -7,6 +9,7 @@ class Balance
 
   def credit(amount)
     @holdings += amount
+    @transactions.history.push([DateTime.now.strftime('%m/%d/%Y'),"+#{amount}","" , @holdings])
   end
 
   def debit(amount)
@@ -14,6 +17,7 @@ class Balance
       insufficient_funds
     else
       @holdings -= amount
+      @transactions.history.push([DateTime.now.strftime('%m/%d/%Y'),"-#{amount}","" , @holdings])
     end
   end
 

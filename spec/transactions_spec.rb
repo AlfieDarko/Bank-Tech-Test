@@ -16,11 +16,11 @@ describe Transactions do
     allow(balance).to receive(:holdings)
     allow(balance).to receive(:credit) do |args|
       allow(balance).to receive(:holdings) {args}
-      subject.history.push(args)
+      subject.history.push([args])
     end
 
     balance.credit(100)
     puts balance.holdings
-    expect(subject.history).to eq [100]
+    expect(subject.history).to eq [[100]]
   end
 end

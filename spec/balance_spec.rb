@@ -9,6 +9,10 @@ describe Balance do
     expect(subject.holdings).to eq 0
   end
 
+  it 'initiates with a transactions property' do
+    expect(subject.transactions).to be_instance_of Transactions
+  end
+
   describe '.credit' do
     it 'adds money to the holdings property' do
       subject.credit(100.00)

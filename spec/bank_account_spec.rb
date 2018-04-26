@@ -1,4 +1,7 @@
-# describe 'BankAccount' do
-#   it 'does something' do
-#   end
-# end
+require 'bank_account.rb'
+
+describe BankAccount do
+  it 'initializes with balance class' do
+    expect(subject.balance).to be_instance_of Balance
+  end
+end
