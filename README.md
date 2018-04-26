@@ -106,6 +106,12 @@ This was an interesting project to do as I had to think a lot about encapsulatio
  and DRY principles. I actively tried to keep methods very short and moved all
 logic to their respective classes and called them from where they were needed.
 
+I used 3 classes. Balance dealt with updating the account holdings. it made calls
+to the Transaction class to record every time there was balance update.
+The transaction class held records of any money moves and also had a function
+to print the statements.The bank account class was the front facing class
+so our users could interact with the program.
+
 I made small psuedo-code plans before hand but I found that the more I developed
 it using TDD, the more areas I recognised could be refactored.
 
