@@ -28,10 +28,11 @@ Ruby
 
 ## Installation
 ### Prerequisites
-Install Ruby (https://www.ruby-lang.org/en/documentation/installation/)
+Install Ruby => (https://www.ruby-lang.org/en/documentation/installation/)
 Run the command 'irb' from the commandline.
 
-Alternatively
+Alternatively use this online ruby environment I have prepared earlier.
+ => (https://repl.it/@AlfieDarko1/Bank-Tech-Test)
 
 ## Usage
 in IRB or PRY (ruby environments)
